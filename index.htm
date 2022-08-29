@@ -794,13 +794,13 @@
                                         </div>
                                         <div class="row">
                                             <div class="d-flex pt-5 col-md-6 term">
-                                                <input type="checkbox"/> 
-                                                <span class="check-txt ms-2">
+                                                <input type="checkbox" id="check" /> 
+                                                <label for="check" class="check-txt ms-2" name="check">
                                                     Məlumatlarımın doğruluğunu təsdiq edir, kredit öhdəliklərim barədə məlumatları 
                                                     <a href="" class="txt-red">AKB KR</a>-dən sorğu etməyə, 
                                                     <a href="" class="txt-red">EHP</a>
                                                     -də qeydiyyatdan keçirməyə və digər məlumat bazalarından məlumatlarımın toplanmasına razılığımı bildirirəm.
-                                                </span>
+                                                </label>
                                             </div>
                                             <div class="col-md-6">
                                                 <button class="btn mt-5 w-100" >Sifariş et</button>
@@ -813,122 +813,471 @@
                         </div>
                 </div>
             </section>
+            <section class="calculator">
+                <div class="calc-top">
+                    <div class="container">
+                        <h2>Kalkulyator</h2>
+                        <div class="calc-cat">
+                            <span>Kredit</span>
+                            <span>Birbank kartı</span>
+                            <span>İpoteka</span>
+                            <span>Depozit</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="calc-bottom">
+                    <div class="container d-flex justify-content-between">
+                        <div class="calc-opt col-md-7 col-12">
+                                <div class="calc-title">
+                                    <p class="font-regular">Gündəlik tələbat krediti</p>
+                                    <span class="font-regular">Siz müştərilərimizə asanlıqla əldə edə biləcəyiniz nağd kredit təklif edirik.</span>
+                                </div>
+                                <div class="calc-inp">
+                                    <form action="" method="get">
+                                        <label for="" class="w-100 d-flex flex-column">
+                                            <span>Məbləğ</span>
+                                            <input type="number" value="300" />
+                                            <input type="range" min="300" max="30000" value="300">
+                                        </label>
+                                        <div class="font-light">
+                                            <span>300</span>
+                                            <span>30 000</span>
+                                        </div>
+                                        <label for="" class="w-100 d-flex flex-column">
+                                            <span>Məbləğ</span>
+                                            <input type="number" value="3" />
+                                            <input type="range" min="3" max="60" value="3">
+                                        </label>
+                                        <div class="font-light">
+                                            <span>3 ay</span>
+                                            <span>60 ay</span>
+                                        </div>
+                                    </form>
+                                </div>
+                        </div>
+                        <div class="calc-result col-md-4 col-12">
+                            <div class="w-100">
+                                <p>Nağd pul krediti üçün <br/> aylıq ödəniş</p>
+                                <span class="txt-light-red font-bold loan-result">103.38₼</span>
+                                <a href="" class="btn w-100">Sifariş et </a>
+                            </div>    
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <div class="banners">
+                <div class="row">
+                    <div class="loan-banner col-md-6 col-12 bg-light-gray position-relative d-flex flex-column justify-content-between">
+                            <div class="loan-title">
+                                <h2 class="font-bold">Onlayn kredit ödənişi</h2>
+                                <p>Banka gəlmədən və növbələrdə vaxt itirmədən kartınızla 4 addıma kredit borcunuzun ödənişi.</p>
+                            </div>
+                            <a href="" class="txt-light-red">Ödəniş et <i class="fas fa-arrow-right ms-4 "></i></a>
+                            <div class="ban-image">
+                                <img src="img/loanbanner.png" alt="" class="w-100">
+                            </div>
+                    </div>
+                    <div class="hr-banner col-md-6 col-12 bg-red position-relative d-flex flex-column justify-content-between">
+                        <div class="hr-title">
+                            <h2 class="font-bold">İnsan resursları</h2>
+                            <p>Kapital Bankın peşəkarlar komandasına qoşulmaq istəyirsinizsə, Sizi müvafiq vakansiyaya müraciət etməyə dəvət edirik. Biz sizə dinamik mühitdə maraqlı və perspektivli iş təklif edirik.</p>
+                        </div>    
+                        <a href="">Daha ətraflı <i class="fas fa-arrow-right ms-4"></i></a>
+                        <div class="hr-image">
+                            <img src="img/hrbanner.webp" alt="" class="w-100 h-100"/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <section class="news bg-light-gray">
+                <div class="container">
+                    <div class="news-content">
+                        <div class="news-top">
+                            <h2>Xəbərlər</h2>
+                            <a href="" class="txt-light-red">Bütün xəbərlər <i class="fas fa-arrow-right ms-4"></i></a>
+                        </div>
+                        <div class="news-bottom">
+                            <div class="news-swiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class="row">
+                                            <div class="col-md-11">
+                                                <div class="d-flex justify-content-between">
+                                                    <div class="">
+                                                        <a href="" class="d-flex">
+                                                            <div>
+                                                                <p class="news-circle">23</p>
+                                                                <span>Avqust</span>
+                                                            </div>
+                                                        <span class="px-3"></span>
+                                                        <p class="news-text"> 
+                                                            Kapital Bank “Google Pay” təmassız ödənişlərini Azərbaycanda tətbiq etdi
+                                                        </p>
+                                                        </a>
+                                                    </div>
+                                                    <div>
+                                                        <a href="" class="d-flex">
+                                                            <div>
+                                                                <p class="news-circle">15</p>
+                                                                <span>Avqust</span>
+                                                            </div>
+                                                            <span class="px-3"></span>
+                                                            <p class="news-text">
+                                                                Kapital Bank “Breyn Rinq”in qalib komandasını mükafatlandırdı
+                                                            </p>
+                                                        </a>
+                                                    </div>
+                                                    <div>
+                                                        <a href="" class="d-flex">
+                                                            <div>
+                                                                <p class="news-circle">11</p>
+                                                                <span>Avqust</span>
+                                                            </div>
+                                                            <span class="px-3"></span>
+                                                            <p class="news-text">
+                                                                “Moody’s” agentliyi Kapital Bank-ın reytinqlərini yüksəldib
+                                                            </p>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col news-button-next swp-btn-hover">
+                                                <i class="fa fa-chevron-right"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="row">
+                                            <div class="col-md-11">
+                                                <div class="d-flex justify-content-between">
+                                                    <div>
+                                                        <a href="" class="d-flex">
+                                                            <div>
+                                                                  <p class="news-circle">23</p>
+                                                                <span>Avqust</span>
+                                                            </div>
+                                                            <span class="px-3"></span>
+                                                            <p class="news-text">
+                                                                Kapital Bank “Google Pay” təmassız ödənişlərini Azərbaycanda tətbiq etdi
+                                                            </p>
+                                                        </a>
+                                                    </div>
+                                                    <div>
+                                                        <a href="" class="d-flex">
+                                                            <div>
+                                                                <p class="news-circle">15</p>
+                                                                <span>Avqust</span>
+                                                            </div>
+                                                            <span class="px-3"></span>
+                                                            <p class="news-text">
+                                                                Kapital Bank “Breyn Rinq”in qalib komandasını mükafatlandırdı
+                                                            </p>
+                                                        </a>
+                                                    </div>
+                                                    <div>
+                                                        <a href="" class="d-flex">
+                                                            <div>
+                                                                <p class="news-circle">11</p>
+                                                                <span>Avqust</span>
+                                                            </div>
+                                                            <span class="px-3"></span>
+                                                            <p class="news-text">
+                                                                “Moody’s” agentliyi Kapital Bank-ın reytinqlərini yüksəldib
+                                                            </p>
+                                                        </a>
+                                                    </div>
+                                                   </div>
+                                            </div>
+                                            <div class="col news-button-next swp-btn-hover">
+                                                <i class="fa fa-chevron-right"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="currency font-regular">
+
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-7 col-12 px-0">
+                            <div class="table-title">
+                                <h2>Valyuta <strong>kalkulyatoru</strong></h2>
+                                <p class="font-light m-0">Bəzi filiallar üzrə fərqli məzənnələr təyin edilə bilər</p>
+                            </div>
+                            <div style="padding-top: 60px"></div>
+                            <!-- <p style="padding-top: 10px;"></p> -->
+                            <table cellspacing="20" id="main_table">
+                                <tr class="font-light">
+                                    <td>Valyuta</td>
+                                    <td>Alış</td>
+                                    <td>Satış</td>
+                                    <td style="padding: .75rem;"></td>
+                                </tr>
+                                <tr>
+                                    <td>USD</td>
+                                    <td>1.697</td>
+                                    <td class="font-semibold">1.702</td>
+                                    <td style="padding: .75rem;"></td>
+                                </tr>
+                                <tr>
+                                    <td>EUR</td>
+                                    <td>1.6795</td>
+                                    <td class="font-semibold">1.729</td>
+                                    <td style="padding: .75rem;"></td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="col-md-5 col-12 px-0">
+                            <div class="currency-result px-0">
+                                <div class="result-top bg-light-gray rounded-3">
+                                    <div class="buy_sell">
+                                        <p class="buy_sell_clicked">Mən satıram</p>
+                                        <p>Mən alıram</p>
+                                    </div>
+                                    <div class="result-input">
+                                            <label for="" class="text-inp">
+                                                <input type="text" value="100" />
+                                                <div class="text_inp_curr">
+                                                    <span class="text_inp_curr_result">AZN</span>
+                                                    <i class="fas fa-angle-down txt-red ms-1"></i>
+                                                    <ul class="result_currency">
+                                                        <li>AZN</li>
+                                                    </ul>
+                                                </div>
+                                            </label>
+                                            <p class="font-light">Məbləği daxil edin</p>
+                                    </div>
+                                    <div>
+                                        <table id="result_table">
+                                            <tr class="result_table_usd">
+                                                <td class="font-semibold">
+                                                    58.75
+                                                </td>
+                                                <td>USD</td>
+                                            </tr>
+                                            <tr class="result_table_eur">
+                                                <td class="font-semibold">58.06</td>
+                                                <td>EUR</td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
         </main>
-        <footer></footer>
+        <footer>
+            <div class="footer-nav font-regular">
+                <div class="footer-nav-top">
+                    <div class="container">
+                        <div class="row">
+                            <ul class="col-md-2">
+                                <h2>
+                                    <span>Kapital Bank</span>
+                                </h2>
+                                <li>
+                                    <a href="">Bank haqqında</a>
+                                </li>
+                                <li>
+                                    <a href="">İnsan resursları</a>
+                                </li>
+                                <li>
+                                    <a href="">Xidmət şəbəkəsi</a>
+                                </li>
+                                <li>
+                                    <a href="">Birbank</a>
+                                </li>
+                                <li>
+                                    <a href="">Xəbərlər</a>
+                                </li>
+                                <li>
+                                    <a href="">Təklif və şikayətlər</a>
+                                </li>
+                            </ul>
+                            <ul class="col-md-2">
+                                <h2>
+                                    <span>Məhsullar</span>
+                                </h2>
+                                <li>
+                                    <a href="">Kartlar</a>
+                                </li>
+                                <li>
+                                    <a href="">Kreditlər</a>
+                                </li>
+                                <li>
+                                    <a href="">Depozitlər</a>
+                                </li>
+                                <li>
+                                    <a href="">Siğorta</a>
+                                </li>
+                                <li>
+                                    <a href="">Pul köçürtmələri</a>
+                                </li>
+                                <li>
+                                    <a href="">Fərdi bankçılıq</a>
+                                </li>
+                                <li>
+                                    <a href="">Onlayn Xidmətlər</a>
+                                </li>
+                            </ul>
+                            <ul class="col-md-2">
+                                <h2>
+                                    <span>Çevik keçidlər</span>
+                                </h2>
+                                <li>
+                                    <a href="">Birbank kartı sifariş et</a>
+                                </li>
+                                <li>
+                                    <a href="">Kredit sifariş et</a>
+                                </li>
+                                <li>
+                                    <a href="">Debet kart sifariş et</a>
+                                </li>
+                                <li>
+                                    <a href="">Onlayn ödənişlər</a>
+                                </li>
+                            </ul>
+                            <ul class="col-md-2">
+                                <h2>
+                                    <span>Digər</span>
+                                </h2>
+                                <li>
+                                    <a href="">Onlayn növbə</a>
+                                </li>
+                                <li>
+                                    <a href="">Tariflər</a>
+                                </li>
+                                <li>
+                                    <a href="">Necə etməli</a>
+                                </li>
+                                <li>
+                                    <a href="">FAQ</a>
+                                </li>
+                            </ul>
+                            <ul class="col-md-4 d-flex flex-column align-items-center" >
+                                <h2 class="text-center" >
+                                    Birbank tətbiqini yükləmək üçün<br>
+                                        QR-kodu oxudun.
+                                </h2>
+                                <li>
+                                    <img src="https://www.kapitalbank.az/assets/static/img/qr-code.svg" alt=""/>
+                                </li>
+                                <li>
+                                    <a href="" class="footer-nav-store">
+                                        <span>
+                                            <img src="https://www.kapitalbank.az/assets/static/img/play-store.svg" alt=""/>
+                                        </span>
+                                        <div>
+                                            <p class="font-semibold">Google Play</p>
+                                            <span>Mobil tətbiqi yüklə</span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="" class="footer-nav-store">
+                                        <span>
+                                            <img src="https://www.kapitalbank.az/assets/static/img/app-store.svg" alt=""/>
+                                        </span>
+                                        <div>
+                                            <p class="font-semibold">App Store</p>
+                                            <span>Mobil tətbiqi yüklə</span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="" class="footer-nav-store">
+                                        <span>
+                                            <img src="https://www.kapitalbank.az/assets/static/img/app-gallery.svg" alt=""/>
+                                        </span>
+                                        <div>
+                                            <p class="font-semibold">App Gallery</p>
+                                            <span>Mobil tətbiqi yüklə</span>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="social">
+                            <a href="tel:+994196" class="social-phone">
+                                <i class="fa fa-phone txt-red"></i> 
+                                <span>196</span>
+                            </a>
+                            <ul>
+                                <li>
+                                    <a href="">
+                                        <i class="fab fa-facebook"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <i class="fab fa-linkedin"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <i class="fab fa-twitter"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <i class="fab fa-instagram"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <i class="fab fa-youtube"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-nav-bottom ">
+                    <div class="container">
+                        <div class="row align-items-center py-4">
+                            <div class="col-md-6 copyright">
+                                <p>© 2022 «Kapital Bank» ASC. Bütün hüquqlar qorunur.</p>
+                            </div>
+                            <div class="partnyor col-md-6">
+                                <ul>
+                                    <li>
+                                        <a href="">
+                                            <img src="https://www.kapitalbank.az/assets/static/img/content/elements/png/93817465.png" alt="" />
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            <img width="75" src="https://www.kapitalbank.az/assets/static/img/content/elements/png/aesf-logo.png" alt="" />
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            <img src="https://www.kapitalbank.az/assets/static/img/content/elements/png/info.png" alt="" />
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            <img src="https://www.kapitalbank.az/assets/static/img/content/elements/png/msp.png" alt="" />
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
         <script src="js/bootstrap.bundle.min.js"></script>
-        <script src="https://kit.fontawesome.com/f449e7b9aa.js" crossorigin="anonymous"></script>
+        <script src="js/fontawesome.js"></script>
         <script src="js/swiper-bundle.min.js"></script>
-        <script>
-            const umuminav = document.querySelectorAll('#nav-categ>div')
-            let buttons = document.querySelectorAll('.accordion-item>button:first-of-type')
-            function mover(x) {
-            let kart = document.querySelector(`#${x}`) 
-            for (let i = 0; i < umuminav.length; i++) {
-                umuminav[i].style.visibility = 'hidden'
-                if (x == 'none') {
-                    umuminav[i].style.visibility = 'hidden'
-                }
-                else if(x!='none'){
-                    kart.style.visibility = 'visible'
-                    kart.onmouseleave = () => {
-                    kart.style.visibility= 'hidden' ;}
-                } 
-                    }
-                }
-let swipermain = new Swiper('.swiper',{
-            direction: 'horizontal',
-            loop: true,
-            navigation: {
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev',
-            },
-        })
-let swipersecond = new Swiper('.swiper-scnd',{
-    direction: 'horizontal',
-    effect:'fade',
-    fadeEffect: {
-        crossFade: true
-    },
-    loop: true,
-    navigation: {
-        nextEl: '.swiper1-button-next',
-        prevEl: '.swiper1-button-prev',
-            },
-        })
-
-    document.querySelector('.mobil-button').onclick = () => {
-    document.querySelector('.nav-categ-mobil').style.display = 'inherit'
-    document.querySelector('.row').style = 'display:none'
-    document.querySelector('main').style.display = 'none'
-}
-document.querySelector('.mobil-opt:nth-last-of-type(1)').onclick = () => {
-    document.querySelector('.row').style.display = 'flex'
-    document.querySelector('.nav-categ-mobil').style.display = 'none'
-    document.querySelector('main').style.display = 'inherit'
-
-}
-
-for (let i = 0; i < buttons.length; i++) {
-    buttons[i].onclick = () => {
-        for (let j = 0; j < buttons.length; j++) {
-            if (buttons[j].classList.value == 'collapsed') buttons[j].innerHTML = '<i class="fas fa-plus" ></i>'
-        }
-        if (buttons[i].classList.value != 'collapsed') {
-            buttons[i].innerHTML = '<i class="fas fa-minus txt-light-red" ></i>'
-        } else {
-            buttons[i].innerHTML = '<i class="fas fa-plus" ></i>'
-        }
-    }
-}       
-
-document.querySelector('.fa-question-circle').onclick = ()=>{
-    document.querySelector('.popov').style.visibility = 'visible'
-    document.querySelector('.popov').style.opacity = '1'
-    document.querySelector('.popov').style.transition = 'all .5s'
-} 
-document.getElementById('pop-x').onclick = ()=>{
-    document.querySelector('.popov').style.visibility = 'hidden' 
-    document.querySelector('.popov').style.opacity = '0'
-
-}
-document.addEventListener('click',(event)=>{
-    let inside = document.querySelector('.fin-inp input').contains(event.target);
-    if(inside){
-        document.querySelector('.fin-inp >label > span').classList.add('inp-active')
-    }
-    if(!inside) {
-        document.querySelector('label > span').classList.remove('inp-active')
-    }
-})
-let kod = ''
-let telnum = ['077','070','051','050','010','055','099','060']
-let ul = document.querySelector('.tel-inp-number')
-for(let i = 0; i<telnum.length;i++){
-    kod+= `<li>${telnum[i]}</li>`
-}
-ul.innerHTML = kod
-function deyish(){
-    document.querySelector('.fa-angle-down').classList.toggle('tel-rotate')
-    ul.classList.toggle('d-block')
-}
-let li = document.querySelectorAll('.tel-inp-number > li')
-Array.from(li).forEach(li =>{
-    li.onclick = ()=>{
-        document.querySelector('.tel-inp > label > div > span').innerHTML = li.innerHTML 
-    }
-}) 
-let searchbtn = document.querySelector('.header-ul .fa-search')
-searchbtn.onclick = ()=>{
-    document.querySelector('.search').classList.toggle('searchisopen')
-    document.querySelector('header > div:nth-of-type(2)').classList.toggle('invisible')
-    document.querySelector('.search-bottom').classList.toggle('movedown') 
-}
-document.querySelector('header .fa-times').onclick= ()=>{
-    document.querySelector('.search').classList.toggle('searchisopen')
-    document.querySelector('header > div:nth-of-type(2)').classList.toggle('invisible')
-    document.querySelector('.search-bottom').classList.toggle('movedown') 
-
-}
-        </script>
+        <script src="js/swiper.js"></script>
+        <script src="js/index.js"></script>
+        <script src="js/calculator.js"></script>
     </body>
 </html>
